@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+
+        <title>Responsive Website</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+        body{
+            font-family: Arial,sans-serif;
+            margin:0;
+            background-color:antiquewhite;
+            text-align:center;
+        }
+        header {
+          background-color: antiquewhite;
+          color:rgb(164, 46, 115);
+          padding: 25px;
+        }
+
+        .box{
+            background-color: rgb(78, 132, 161);
+            padding:25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #636d75;
+            flex: 1;
+        }
+        .box h2{
+            color:#030401e6;
+        
+        }
+
+        /*Responsive Design*/
+        @media(max-width:60px){
+        .container {
+            flex-direction: column;
+        }
+        header {
+            font-size: 14px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to My Web Development Project</p>
+    </header>
+
+
+    <div class="container">
+
+        <div class="box"
+           <h2>HTML</h2>
+            <p>HTML is used to create the structure of a webpage.</p>
+
+        </div>
+         <div class="box">
+            <h2>CSS</h2>
+            <p>CSS is used to style and design a webpage.</p>
+    </div>
+        <div class="box"
+       <h2>javaScript</h2>
+       <p>javaScript makes webpages interactive.</p>
+    </div>
+    
+      </div>
+</body>
+</html>

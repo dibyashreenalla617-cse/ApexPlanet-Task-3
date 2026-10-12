@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Quiz</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #333535;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .quiz {
+            background: white;
+            max-width: 450px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #aaa;
+        }
+
+        h1 {
+            color: rgb(146, 79, 126);
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: rgb(212, 152, 194);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkcyan;
+        }
+
+        #result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quiz">
+        <h1>Web Development Quiz</h1>
+
+        <h3>1. HTML ka full form kya hai?</h3>
+
+        <button onclick="checkAnswer(false)">
+            Hyper Text Makeup Language
+        </button>
+
+        <button onclick="checkAnswer(true)">
+            HyperText Markup Language
+        </button>
+
+        <button onclick="checkAnswer(false)">
+            High Text Machine Language
+        </button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkAnswer(correct) {
+            const result = document.getElementById("result");
+
+            if (correct) {
+                result.textContent = "Correct Answer! 🎉";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Wrong Answer! Try Again.";
+                result.style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
